@@ -24,7 +24,7 @@ const Home = () => {
       const res = await api.get('/content', { params });
       setContents(res.data);
       if (recommendations.length === 0) {
-        setRecommendations(res.data.slice(1, 5)); // Ambil cadangan dari konten utama jika kosong
+        setRecommendations(res.data.slice(1, 5)); 
       }
     } finally {
       setLoading(false);
